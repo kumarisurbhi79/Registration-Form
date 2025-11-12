@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            user-select: none;
+            cursor: default !important;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            background-color: white;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px black;
+        }
+        h1{
+            text-align: center;
+            columns: black;
+        }
+        h4{
+            text-align: center;
+            columns: black;
+        }
+        fieldset{
+            border: 1px solid grey;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        legend{
+            font-weight: bold;
+            columns: black;
+        }
+        button{
+            width: 100%;
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+        }
+        button:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Registration Form</h1>
+        <h4>Fill the details</h4>
+        <form>
+            <fieldset>
+            <fieldset>
+                <legend>Personal Details</legend>
+            <p>1. Name</p>
+            <input type="text" placeholder="Name">
+            <br>
+             <p>2. Mobile No</p>
+            <input type="text" placeholder="Mobile No">
+            <br>
+             <p>3. Email</p>
+            <input type="text" placeholder=" Email">
+             </fieldset>
+             <br>
+            <fieldset>
+                <legend> Academic Details</legend>
+            <p>4. Class</p>
+            <label for="101">
+                <input type="radio" value="class XI" name="class" id="101">Class XI
+            </label>
+            <label for="102">
+                <input type="radio" value="class XII" name="class" id="102">Class XII
+            </label>
+            <br>
+            <p>5. Choose your Gender</p>
+             <label for="101">
+                <input type="radio" value="Male" name="Gender" id="101">Male
+            </label>
+            <br>
+             <label for="102">
+                <input type="radio" value="Female" name="Gender" id="102">Female
+            </label>
+            <br>
+             <label for="103">
+                <input type="radio" value="Other" name="Gender" id="103">Other
+            </label>
+            <br>
+            <p>6. Choose Your Subject</p>
+            <input type="checkbox" value="Math" name="subject">Math
+            <br>
+            <input type="checkbox" value="Biology" name="subject">Biology
+            <br>
+            <input type="checkbox" value="Physics" name="subject">Physics
+            <br>
+            <input type="checkbox" value="Chemistry" name="subject">Chemistry
+            <br>
+            <input type="checkbox" value="Hindi" name="subject">Hindi
+            <br>
+            <input type="checkbox" value="English" name="subject">English
+            <br>
+            <p>7. Choose your district</p>
+            <select name="District">
+                <option value="Samastipur">Samastipur</option>
+                <option value="Katihar">Katihar</option>
+                <option value="Begusarai">Begusarai</option>
+                <option value="Hajipur">Hajipur</option>
+                <option value="Darbhanga">Darbhanga</option>
+            </select>
+            <br>
+            <p>8. Date of Birth</p>
+            <input type="date">
+            <br>
+            <p>9. Upload file</p>
+            <input type="file">
+            <br>
+            <p>10. Write your Feedback</p>
+            <textarea id="text" rows="5" placeholder="Wrtie your Feedback here ..."></textarea>
+            <br>
+            <p>11. Submit the form</p>
+            <button>Submit</button>
+            </fieldset>
+            </fieldset>
+        </form>
+    </form>
+</body>
+</html>
